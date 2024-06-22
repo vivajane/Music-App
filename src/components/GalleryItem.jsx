@@ -23,11 +23,11 @@ const GalleryItem = () => {
   }, []);
   console.log(assets);
   return (
-    <div className="flex gap-5 overflow-auto">
+    <div className="flex flex-wrap justify-center gap-5 p-5 overflow-auto">
       {error && <p>{error}</p>}
 
       {Albums &&
-        Albums?.map((item, id) => (
+        Albums.map((item, id) => (
           <Items
             key={id}
             name={item.name}
