@@ -5,12 +5,12 @@ import { MdLibraryMusic } from "react-icons/md";
 import { GrLinkNext } from "react-icons/gr";
 import { IoMdAdd } from "react-icons/io";
 import { FaRegPauseCircle } from "react-icons/fa";
-<FaRegPauseCircle />
+<FaRegPauseCircle />;
 
 const SideBarleft = () => {
   return (
-    <div className=" w-1/4 h-[1047px] text-xs sm:w-1/3 md:w-1/2 md:text-base xl:h-full">
-      <div className="mb-1 h-[80px] bg-blue-900 p-2 ">
+    <div className="flex flex-col w -1/4 h-[1047px h-full text-xs sm:w -1/3 md:w -1/2 md:text-base xl:h -full">
+      <div className="mb-1 h-1/6 bg-blue-900 p-2 ">
         <div className="flex items-center gap-3">
           <span>
             <AiTwotoneHome />
@@ -28,7 +28,8 @@ const SideBarleft = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-blue-900 h-[84%]">
+
+      <div className=" bg-blue-900 h-[84% h-5/6">
         <div className="flex items-center justify-between p-2">
           <div className="flex items-center gap-3">
             <div>
@@ -51,11 +52,15 @@ const SideBarleft = () => {
         </div>
         <div className="bg-blue-400 py-2 mt:3 sm:mt-6 h-[100px] p-2 mx-1.5 rounded">
           <p>Create a playlist</p>
-         <button className="bg-gray-300 py-2 px-2.5 sm:py-2 sm:px-2.5 mt-2 rounded-xl hover:bg-black text-[8px]">CREATE</button>
+          <button className="bg-gray-300 py-2 px-2.5 sm:py-2 sm:px-2.5 mt-2 rounded-xl hover:bg-black text-[8px]">
+            CREATE
+          </button>
         </div>
         <div className="bg-blue-400 py-2 mt-3 sm:mt-6  sm:h-[100px] p-2 mx-1.5 rounded">
           <p>Find some podcasts to follow</p>
-         <button className="bg-gray-300 text-[8px] py-2 px-2.5 mt-2 rounded-xl hover:bg-black">Search Podcasts</button>
+          <button className="bg-gray-300 text-[8px] py-2 px-2.5 mt-2 rounded-xl hover:bg-black">
+            Search Podcasts
+          </button>
         </div>
       </div>
     </div>
