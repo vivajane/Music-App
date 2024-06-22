@@ -10,7 +10,8 @@ const Items = ({ name, desc, image }) => {
         alt="Playlist art"
         className="rounded-xl shadow-xl cursor-pointer"
       />
-      <p className=" text-center text-gray-200">{desc}</p>
+
+      <p className="text-center text-gray-200">{desc}</p>
     </div>
   );
 };
