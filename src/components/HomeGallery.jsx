@@ -1,18 +1,14 @@
-
-import GalleryItem from './GalleryItem'
-import NavBar from './NavBar'
-
+import GalleryItem from "./GalleryItem";
+import NavBar from "./NavBar";
 
 const HomeGallery = () => {
   return (
-    <div className='w-[100%] overflow-auto'>
-        <NavBar/>
-        
-        <GalleryItem/>
-      
-      
-    </div>
-  )
-}
+    <div className="w-[100%] overflow-auto">
+      <NavBar />
 
-export default HomeGallery
+      <GalleryItem />
+    </div>
+  );
+};
+
+export default HomeGallery;
