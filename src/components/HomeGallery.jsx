@@ -1,14 +1,14 @@
 
-// import GalleryItem from './GalleryItem'
+import GalleryItem from './GalleryItem'
 import NavBar from './NavBar'
 
 
 const HomeGallery = () => {
   return (
-    <div>
+    <div className='w-[100%] overflow-auto'>
         <NavBar/>
         
-        {/* <GalleryItem/> */}
+        <GalleryItem/>
       
       
     </div>

@@ -1,27 +1,38 @@
 import { useState, useEffect } from 'react';
 import { allAssets } from '../apiRequest/ApiRequest';
-import Items from './Items';
+import Items from "./Items"
+import { Albums } from '../assets/asset';
+
+
+
 
 const GalleryItem = () => {
-    const [assets, setAsset] = useState([])
+    const [assets, setAssets] = useState([])
+    const [error, setError] = useState("")
    useEffect(() => {
     const asset = async() => {
         try{
             const res = await allAssets()
-            console.log(res.data.albums, "this is the response")
-            setAsset(res.data.albums)
+            console.log(res, "this is the response")
+           
+            setAssets(res?.data)
 
         }catch(error){
-            console.log(error)
+          setError(error.message)
+            console.log(error, "this is from errror")
         }
     }
+
     asset();
    },[])
+   console.log(assets)
   return (
-    <div>
+    <div className="flex gap-5 overflow-auto">
+      {error && <p>{error}</p>}
+      
         {
-          assets.map((asset, id) => (
-            <Items key={id} artists={asset.artists} images={asset.images} tracks={asset.tracks}/>
+          Albums && Albums?.map((item, id) => (
+            <Items key={id} name={item.name} desc={item.desc} image={item.image} />
           )
           )
         }

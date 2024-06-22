@@ -8,8 +8,6 @@ function App() {
     <div className="bg-gray-900 h-screen text-gray-50">
       <div className="h-[90%] flex">
       <SideBarleft/>
-      
-     
       <Gallery/>
       </div>
       <Music/>

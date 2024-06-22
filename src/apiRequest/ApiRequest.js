@@ -2,10 +2,10 @@ import axios from "axios";
 
 export const allAssets = async() =>{
    try{
-    const response = await axios.get('https://spotify23.p.rapidapi.com/albums/?ids=3IBcauSj5M2A6lTeffJzdv',{
+    const response = await axios.get(`https://spotify23.p.rapidapi.com/search/?type=multi&offset=0&limit=10&numberOfTopResults=5`,{
         headers: {
             'x-rapidapi-host': 'spotify23.p.rapidapi.com',
-            'x-rapidapi-key': '90625ec61bmshe58be17b0daeae7p1604dbjsnf464546f8b40',
+            'x-rapidapi-key': '3374f90fe0mshbb2ddfbaea09dd9p1e05afjsnc61d34017012',
         },
     }
        

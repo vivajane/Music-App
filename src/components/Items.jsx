@@ -1,21 +1,12 @@
-import PropTypes from 'prop-types';
+import React from "react";
 
-const Items = ({ artists, images, tracks}) => {
+const Items = ({name, desc, image}) => {
   return (
-    <li>
-      <p>{artists}</p>
-      <p>{images}</p>
-      <p>{JSON.stringify(tracks)}</p>
-    </li>
+    <div className="min-w[180px] mt-3 p-6 hover:bg-slate-500">
+      <div>{name}</div>
+      <img src={image} alt="" className=""/>
+      <p>{desc}</p>
+    </div>
   );
 };
-
-Items.propTypes = {
-    artists: PropTypes.string,
-    images: PropTypes.string,
-    tracks: PropTypes.string,
-    id: PropTypes.string,
-  };
-  
-
 export default Items;
