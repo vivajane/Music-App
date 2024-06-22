@@ -23,7 +23,7 @@ const GalleryItem = () => {
   }, []);
   console.log(assets);
   return (
-    <div className="flex flex-wrap justify-center gap-5 p-5 overflow-auto">
+    <div className="flex flex-wrap justify-center gap-5 p-5 overflow-auto h-full">
       {error && <p>{error}</p>}
 
       {Albums &&

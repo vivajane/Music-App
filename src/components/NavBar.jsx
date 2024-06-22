@@ -1,12 +1,11 @@
-
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 // import GalleryItem from "./GalleryItem";
 
 const NavBar = () => {
   return (
-    <div>
-      <div className="flex justify-between p-4">
+    <div className="flex flex-col justify-center">
+      <section className="flex justify-between h-full bg-yellow-30 overflow-hiddenn px-5">
         <div className="flex gap-3">
           <span>
             <IoIosArrowBack />
@@ -15,23 +14,29 @@ const NavBar = () => {
             <IoIosArrowForward />
           </span>
         </div>
+
         <div className="flex gap-2">
-          <div>
-            <button>Install App</button>
-          </div>
-          <p className="bg-blue-900 px-2 rounded-full">
-            <span>
-              <strong>K</strong>
-            </span>
+          <button>Install App</button>
+          <p className="bg-blue-900  grid place-items-center size-7 rounded-full">
+            K
           </p>
         </div>
-      </div>
-      <div className="flex px-4 gap-8 text-black">
-        <p className="bg-white px-6 rounded-full">All</p>
-        <p>Podcasts</p>
-        <p>Music</p>
-      </div>
-     
+      </section>
+
+      {/* Category selection section */}
+      <section className="flex justify-between sm:justify-start bg-red-400 text-black">
+        <button className="px-6 rounded-full bg-white focus:bg-white hover:bg-white/50 outline-none">
+          All
+        </button>
+
+        <button className="px-6 rounded-full focus:bg-white hover:bg-white/50 outline-none">
+          Podcasts
+        </button>
+
+        <button className="px-6 rounded-full focus:bg-white hover:bg-white/50 outline-none">
+          Music
+        </button>
+      </section>
     </div>
   );
 };

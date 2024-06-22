@@ -16,7 +16,7 @@ import { FaVolumeMute } from "react-icons/fa";
 
 const Music = () => {
   return (
-    <div className="h-20 fixed bottom-0 w-full bg-gray-900 flex items-center justify-between px-5">
+    <div className="h-full bottom-0 w-full bg-gray-900 flex items-center justify-between px-5">
       {/* left section */}
       <div className="flex items-center gap-4">
         <img
