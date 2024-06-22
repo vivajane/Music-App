@@ -8,7 +8,7 @@ const Items = ({ name, desc, image }) => {
       <img
         src={image}
         alt="Playlist art Image"
-        className="rounded-lg cursor-pointer shadow-xl"
+        className="rounded-lg cursor-pointer shadow-xl h-96"
       />
 
       <div className="flex flex-col gap-1 text-center">
