@@ -9,7 +9,7 @@ import { FaRegPauseCircle } from "react-icons/fa";
 
 const SideBarleft = () => {
   return (
-    <div className=" w-1/4 h-[1047px] text-xs sm:w-1/3 md:w-1/2 md:text-base xl:h-full">
+    <div className=" w-1/4 h-[474px] text-xs sm:w-1/3 md:w-1/2 md:text-base xl:h-full">
       <div className="mb-1 h-[80px] bg-blue-900 p-2 ">
         <div className="flex items-center gap-3">
           <span>
