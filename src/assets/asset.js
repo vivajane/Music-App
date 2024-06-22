@@ -19,7 +19,7 @@ export const Albums = [
     id: 3,
     name: "HighLife Music",
     image:
-      "https://images.pexels.com/photos/3533228/pexels-photo-3533228.png?auto=compress&cs=tinysrgb&w=400",
+      "https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&w=400",
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi corporis mollitia ",
     
   },
