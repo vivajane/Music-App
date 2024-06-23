@@ -34,7 +34,8 @@ const SideBarleft = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-blue-900 h-[84%]">
+
+      <div className=" bg-blue-900 h-[84% h-5/6">
         <div className="flex items-center justify-between p-2">
           <div className="flex items-center gap-3">
             <div>
@@ -57,11 +58,15 @@ const SideBarleft = () => {
         </div>
         <div className="bg-blue-400 py-2 mt:3 sm:mt-6 h-[100px] p-2 mx-1.5 rounded">
           <p>Create a playlist</p>
-         <button className="bg-gray-300 py-2 px-2.5 sm:py-2 sm:px-2.5 mt-2 rounded-xl hover:bg-black text-[8px]">CREATE</button>
+          <button className="bg-gray-300 py-2 px-2.5 sm:py-2 sm:px-2.5 mt-2 rounded-xl hover:bg-black text-[8px]">
+            CREATE
+          </button>
         </div>
         <div className="bg-blue-400 py-2 mt-3 sm:mt-6  sm:h-[100px] p-2 mx-1.5 rounded">
           <p>Find some podcasts to follow</p>
-         <button className="bg-gray-300 text-[8px] py-2 px-2.5 mt-2 rounded-xl hover:bg-black">Search Podcasts</button>
+          <button className="bg-gray-300 text-[8px] py-2 px-2.5 mt-2 rounded-xl hover:bg-black">
+            Search Podcasts
+          </button>
         </div>
       </div>
     </div>
