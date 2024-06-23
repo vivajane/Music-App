@@ -4,9 +4,10 @@ import HomeGallery from "./HomeGallery";
 const Gallery = () => {
   return (
     <div className="bg-blue-500 w-full overflow-auto h-full">
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<HomeGallery />} />
-      </Routes>
+      </Routes> */}
+      <HomeGallery />
     </div>
   );
 };

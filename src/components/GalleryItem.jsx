@@ -23,15 +23,17 @@ const GalleryItem = () => {
     asset();
   }, []);
   console.log(assets);
-  return (
-    <div>
-      <div>
-        <div className="pt-4 text-center font-extrabold text-[25px] text-black">
-          <h2>MOST POPULAR IN YOUR AREA</h2>
-        </div>
-        <div className="flex justify-center gap-5 p-5 overflow-auto">
-          {error && <p>{error}</p>}
 
+  return (
+    // <div className="flex flex-wrap justify-center gap-5 p-5 overflow-auto h-full">
+    <div className="flex flex-col gap-5 h-full overflow-scroll p-5">
+      <div className="flex flex-col gap-5 py-10">
+        <h2 className="text-center text-black text-xl md:text-3xl my font-bold bg-blue-">
+          MOST POPULAR IN YOUR AREA
+        </h2>
+        {error && <p>{error}</p>}
+
+        <ul className="flex flex-wrap justify-center gap-5">
           {Albums &&
             Albums.map((item, id) => (
               <Items
@@ -41,15 +43,16 @@ const GalleryItem = () => {
                 image={item.image}
               />
             ))}
-        </div>
+        </ul>
       </div>
-      <div>
-        <div className="py-4 text-center">
-          <h2>MOST POPULAR IN YOUR AREA</h2>
-        </div>
-        <div className="flex justify-center gap-5 overflow-auto">
-          {error && <p>{error}</p>}
 
+      <div className="flex flex-col gap-5 py-10">
+        <h2 className="text-center text-black text-xl md:text-3xl my font-bold bg-blue-">
+          RECOMMENDED
+        </h2>
+        {error && <p>{error}</p>}
+
+        <ul className="flex flex-wrap justify-center gap-5">
           {PopularItems &&
             PopularItems.map((item, id) => (
               <Items
@@ -59,8 +62,24 @@ const GalleryItem = () => {
                 image={item.image}
               />
             ))}
-        </div>
+        </ul>
       </div>
+
+      {/* <div className="bg-green-700 p-5">
+        <h2>MOST POPULAR IN YOUR AREA</h2>
+        {error && <p>{error}</p>}
+
+        <ul className="flex flex-wrap justify-center gap-5"></ul>
+        {PopularItems &&
+          PopularItems.map((item, id) => (
+            <Items
+              key={id}
+              name={item.name}
+              desc={item.desc}
+              image={item.image}
+            />
+          ))}
+      </div> */}
     </div>
   );
 };
