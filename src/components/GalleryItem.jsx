@@ -26,15 +26,35 @@ const GalleryItem = () => {
     <div className="flex flex-wrap justify-center gap-5 p-5 overflow-auto h-full">
       {error && <p>{error}</p>}
 
-      {Albums &&
-        Albums.map((item, id) => (
-          <Items
-            key={id}
-            name={item.name}
-            desc={item.desc}
-            image={item.image}
-          />
-        ))}
+          {Albums &&
+            Albums.map((item, id) => (
+              <Items
+                key={id}
+                name={item.name}
+                desc={item.desc}
+                image={item.image}
+              />
+            ))}
+        </div>
+      </div>
+      <div>
+        <div className="py-4 text-center">
+          <h2>MOST POPULAR IN YOUR AREA</h2>
+        </div>
+        <div className="flex justify-center gap-5 overflow-auto">
+          {error && <p>{error}</p>}
+
+          {PopularItems &&
+            PopularItems.map((item, id) => (
+              <Items
+                key={id}
+                name={item.name}
+                desc={item.desc}
+                image={item.image}
+              />
+            ))}
+        </div>
+      </div>
     </div>
   );
 };

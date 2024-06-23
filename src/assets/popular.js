@@ -1,9 +1,9 @@
 export const PopularItems = [
   {
     id: 1,
-    name: "TOBECHUKWU",
+    name: "TOBECHI",
     image:
-      "https://images.pexels.com/photos/4298629/pexels-photo-4298629.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.pexels.com/photos/4995560/pexels-photo-4995560.jpeg?auto=compress&cs=tinysrgb&w=400",
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi corporis mollitia ",
     bgColor: "#44337a",
   },
@@ -24,9 +24,9 @@ export const PopularItems = [
   },
   {
     id: 4,
-    name: "EGWU",
+    name: "EGWUM",
     image:
-      "https://images.pexels.com/photos/5611966/pexels-photo-5611966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/6151982/pexels-photo-6151982.jpeg?auto=compress&cs=tinysrgb&w=400",
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi corporis mollitia ",
     bgColor: "#44337a",
   },
