@@ -5,13 +5,16 @@ import { MdLibraryMusic } from "react-icons/md";
 import { GrLinkNext } from "react-icons/gr";
 import { IoMdAdd } from "react-icons/io";
 import { FaRegPauseCircle } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 <FaRegPauseCircle />
 
 const SideBarleft = () => {
   return (
-    <div className=" w-1/4 h-[474px] text-xs sm:w-1/3 md:w-1/2 md:text-base xl:h-full">
+    <div className=" w-1/4 h-[500px] text-xs sm:w-1/3 md:w-1/2 md:text-base xl:h-full">
       <div className="mb-1 h-[80px] bg-blue-900 p-2 ">
-        <div className="flex items-center gap-3">
+        <div>
+          <NavLink to={"/"}>
+          <div className="flex items-center gap-3">
           <span>
             <AiTwotoneHome />
           </span>
@@ -19,6 +22,9 @@ const SideBarleft = () => {
             <h3>Home</h3>
           </div>
         </div>
+          </NavLink>
+        </div>
+
         <div className="flex items-center gap-3">
           <span>
             <IoSearchOutline />

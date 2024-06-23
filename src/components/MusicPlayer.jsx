@@ -27,6 +27,7 @@ const Music = () => {
         <div className="text-[5px] sm:text-xs">
           <p>Song One</p>
           <p>God is love</p>
+       
         </div>
       </div>
       <div className="flex flex-col gap-1 text-[6px] sm:text-xs" >
