@@ -23,11 +23,14 @@ const GalleryItem = () => {
     asset();
   }, []);
   console.log(assets);
+
   return (
     // <div className="flex flex-wrap justify-center gap-5 p-5 overflow-auto h-full">
-    <div className="h-full overflow-scroll">
-      <div className="bg-red-200 p-5">
-        <h2 className="text-center bg-red-400">MOST POPULAR IN YOUR AREA</h2>
+    <div className="flex flex-col gap-5 h-full overflow-scroll p-5">
+      <div className="flex flex-col gap-5 py-10">
+        <h2 className="text-center text-black text-xl md:text-3xl my font-bold bg-blue-">
+          MOST POPULAR IN YOUR AREA
+        </h2>
         {error && <p>{error}</p>}
 
         <ul className="flex flex-wrap justify-center gap-5">
@@ -43,8 +46,10 @@ const GalleryItem = () => {
         </ul>
       </div>
 
-      <div className="bg-green-700 p-5">
-        <h2 className="text-center bg-red-400">MOST POPULAR IN YOUR AREA</h2>
+      <div className="flex flex-col gap-5 py-10">
+        <h2 className="text-center text-black text-xl md:text-3xl my font-bold bg-blue-">
+          RECOMMENDED
+        </h2>
         {error && <p>{error}</p>}
 
         <ul className="flex flex-wrap justify-center gap-5">
