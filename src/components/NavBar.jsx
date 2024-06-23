@@ -24,7 +24,7 @@ const NavBar = () => {
       </section>
 
       {/* Category selection section */}
-      <section className="flex justify-between sm:justify-start bg-red-400 text-black">
+      <section className="flex justify-between sm:justify-start text-black">
         <button className="px-6 rounded-full bg-white focus:bg-white hover:bg-white/50 outline-none">
           All
         </button>
