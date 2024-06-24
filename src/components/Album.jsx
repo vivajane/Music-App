@@ -9,7 +9,7 @@ import { PopularItems } from '../assets/popular';
 const Album = () => {
     const{id} = useParams()
     // console.log(id)
-    const albums = Albums.find((e) => e.id === parseInt(id)) || PopularItems.find((e) =>e.id === parseInt(id));
+    const albums = Albums.find((e) => e.id === (id)) || PopularItems.find((e) =>e.id === (id));
     console.log(albums, "FROM ALBUMS")
   return (
     <div>
