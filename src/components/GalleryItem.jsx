@@ -25,7 +25,7 @@ const GalleryItem = () => {
   // console.log(assets);
   return (
     <div>
-      <div>
+      <div className="mt-10">
         <div className="pt-4 text-center font-extrabold text-[25px] text-black">
           <h2>MOST POPULAR IN YOUR AREA</h2>
         </div>
@@ -46,7 +46,7 @@ const GalleryItem = () => {
       </div>
       <div>
         <div className="pt-4 text-center font-extrabold text-[25px] text-black">
-          <h2>MOST POPULAR IN YOUR AREA</h2>
+          <h2>LATEST IN YOUR AREA</h2>
         </div>
         <div className="flex justify-center gap-5 overflow-auto">
           {PopularItems &&

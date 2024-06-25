@@ -12,7 +12,7 @@ const Items = ({ name, desc, image, id}) => {
 
   return (
     <div onClick={(()=>(`navigate(/album/${id})`))} className="group w-96 flex flex-col gap-5 p-6 hover:bg-slate-500/50 transition-all">
-      <h1 className="font-bold text-center text-xl lg:text-3xl group-hover:text-xl lg:group-hover:text-4xl transition-all lg:mb-3 tracking-wide">
+      <h1 className="font-bold text-center text-xl lg:text-3xl group-hover:text-xl lg:group-hover:text-4xl transition-all lg:mb-3">
         {name}
       </h1>
 
@@ -20,7 +20,7 @@ const Items = ({ name, desc, image, id}) => {
       <img 
         src={image}
         alt="Playlist art Image"
-        className="rounded-lg cursor-pointer shadow-xl h-96"
+        className="rounded-lg cursor-pointer shadow-xl md:h-64 md:w-64 h-auto w-[100%] "
       />
       </NavLink>
 

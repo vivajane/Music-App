@@ -9,13 +9,14 @@ import { PopularItems } from '../assets/popular';
 const Album = () => {
     const{id} = useParams()
     // console.log(id)
-    const albums = Albums.find((e) => e.id === (id)) || PopularItems.find((e) =>e.id === (id));
+    const albums = Albums.find((e) => e.id === parseInt(id)) || PopularItems.find((e) =>e.id === parseInt(id));
     console.log(albums, "FROM ALBUMS")
   return (
     <div>
      <NavBar/>
-     <div>
-        <img src={albums.image} alt="" />
+     <div className='mx-auto my-10'>
+        <h1 className='text-center text-3xl font-bold'>{albums.name}</h1>
+        <img src={albums.image} alt="" className='mx-auto' />
      </div>
     </div>
   )
