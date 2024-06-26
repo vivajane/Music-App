@@ -15,9 +15,9 @@ const NavBar = () => {
           </span>
         </div>
 
-        <div className="flex gap-2">
+        <div className="flex items-center gap-2">
           <button>Install App</button>
-          <p className="bg-blue-900  grid place-items-center size-7 rounded-full">
+          <p className="bg-blue-900 grid place-items-center size-7 rounded-full">
             K
           </p>
         </div>
