@@ -17,9 +17,9 @@ import { Albums } from "../assets/asset";
 
 const Music = () => {
   return (
-    <div className="h-10% w-full bg-gray-900 flex items-center justify-between px-5 text-gray-50">
+    <div className="h-full h-  w-full bg-gray-900 flex items-center justify-between px-5 text-gray-50">
       {/* left section */}
-      <div className="flex items-center gap-4">
+      <section className="flex items-center gap-4">
         <img
           src={logo}
           alt="song"
@@ -29,12 +29,11 @@ const Music = () => {
         <div className="text-[8px] md:text-sm">
           <p className=" text-center">{Albums[0].name}</p>
           <p className="">{Albums[0].desc.slice(0, 10)}</p>
-       
         </div>
-      </div>
+      </section>
 
       {/* middle section */}
-      <div className="flex flex-col gap-1 text-[6px] sm:text-xs">
+      <section className="flex flex-col gap-1 text-[6px] sm:text-xs">
         {/* controls icons sub-section */}
         <div className="flex justify-center gap-3 pl-1">
           <span>
@@ -62,10 +61,10 @@ const Music = () => {
           </div>
           <span>2:02</span>
         </div>
-      </div>
+      </section>
 
       {/* right section */}
-      <div className="hidden lg:flex items-center opacity-65 gap-1">
+      <section className="hidden lg:flex items-center opacity-65 gap-1">
         <span>
           <FaPlay />
         </span>
@@ -86,7 +85,7 @@ const Music = () => {
         <span>
           <MdOutlineZoomIn />
         </span>
-      </div>
+      </section>
     </div>
   );
 };

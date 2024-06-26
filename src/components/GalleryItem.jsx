@@ -24,14 +24,13 @@ const GalleryItem = () => {
   // }, []);
   // console.log(assets);
   return (
-    <div>
-      <div className="mt-10">
+    <div className="flex flex-col gap-20 h-full min-h-screen overflow-auto">
+      <section className="">
         <div className="pt-4 text-center font-extrabold text-[25px] text-black">
           <h2>MOST POPULAR IN YOUR AREA</h2>
         </div>
-        <div className="flex justify-center gap-5 p-5 overflow-auto">
-  
 
+        <ul className="flex flex-wrap justify-center gap-5 p- overflow-auto">
           {Albums &&
             Albums.map((item, id) => (
               <Items
@@ -42,13 +41,15 @@ const GalleryItem = () => {
                 image={item.image}
               />
             ))}
-        </div>
-      </div>
-      <div>
+        </ul>
+      </section>
+
+      <section className="">
         <div className="pt-4 text-center font-extrabold text-[25px] text-black">
           <h2>LATEST IN YOUR AREA</h2>
         </div>
-        <div className="flex justify-center gap-5 overflow-auto">
+
+        <ul className="flex flex-wrap justify-center gap-5 overflow-auto">
           {PopularItems &&
             PopularItems.map((item, id) => (
               <Items
@@ -59,8 +60,8 @@ const GalleryItem = () => {
                 image={item.image}
               />
             ))}
-        </div>
-      </div>
+        </ul>
+      </section>
     </div>
   );
 };

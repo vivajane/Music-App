@@ -5,17 +5,13 @@ import NavBar from "./NavBar";
 const HomeGallery = () => {
   return (
     <div className="flex flex-col h-full overflow-auto">
-      <section className="h-[5%]">
+      <section className="sticky top-0 flex w-full h-[10%]">
         <NavBar />
       </section>
 
-      <section className="h-[85%]">
+      <section className="h-[90%]">
         <GalleryItem />
       </section>
-
-      {/* <section className="h-[10%]">
-        <Music />
-      </section> */}
     </div>
   );
 };

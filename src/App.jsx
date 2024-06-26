@@ -4,12 +4,14 @@ import SideBarleft from "./components/SideBar-left";
 
 function App() {
   return (
-    <div className="h-screen bg-black">
-      <div className="h-[90%] flex">
-      <SideBarleft />
-      <Gallery />
-      </div>
-      <Music />
+    <div className="flex h-screen bg-black">
+      <section className="w-[25%] sm:w-2/12 bg-green-300">
+        <SideBarleft />
+      </section>
+
+      <section className="h-full w-[75%] sm:w-10/12 bg-pink-400">
+        <Gallery />
+      </section>
     </div>
   );
 }
