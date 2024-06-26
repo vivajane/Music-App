@@ -24,8 +24,8 @@ const GalleryItem = () => {
   // }, []);
   // console.log(assets);
   return (
-    <div className="h-full bg-blue-400">
-      <section className="mt- bg-red-300">
+    <div className="flex flex-col gap-20 h-full min-h-screen overflow-auto">
+      <section className="">
         <div className="pt-4 text-center font-extrabold text-[25px] text-black">
           <h2>MOST POPULAR IN YOUR AREA</h2>
         </div>
@@ -44,7 +44,7 @@ const GalleryItem = () => {
         </ul>
       </section>
 
-      <section className=" bg-green-600">
+      <section className="">
         <div className="pt-4 text-center font-extrabold text-[25px] text-black">
           <h2>LATEST IN YOUR AREA</h2>
         </div>
