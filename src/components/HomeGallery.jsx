@@ -4,8 +4,8 @@ import NavBar from "./NavBar";
 
 const HomeGallery = () => {
   return (
-    <div className="flex flex-col h-full overflow-auto">
-      <section className="h-[10%]">
+    <div className="flex flex-col h-full overflow-auto bg-yellow-300">
+      <section className="sticky top-0 flex  w-full h-[10%]">
         <NavBar />
       </section>
 

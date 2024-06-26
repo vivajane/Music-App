@@ -24,7 +24,7 @@ const GalleryItem = () => {
   // }, []);
   // console.log(assets);
   return (
-    <div className="h-full">
+    <div className="h-full bg-blue-400">
       <section className="mt- bg-red-300">
         <div className="pt-4 text-center font-extrabold text-[25px] text-black">
           <h2>MOST POPULAR IN YOUR AREA</h2>
