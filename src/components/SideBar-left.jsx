@@ -59,15 +59,21 @@ const SideBarleft = () => {
             </span>
           </div>
         </div>
-        <div className="bg-blue-400 py-2 mt:3 sm:mt-6 h-[100px] p-2 mx-1.5 rounded mt-4">
+
+        <div className="bg-blue-400 py-3 md:py-5 mt:3 sm:mt-6 p-2 mx-1.5 rounded mt-4">
           <p>Create a playlist</p>
-          <button className="bg-gray-300 py-2 px-2.5 sm:py-2 sm:px-2.5 mt-2 rounded-xl hover:bg-black text-[8px]">
+          {/* <button className="bg-gray-300 py-2 px-2.5 sm:py-2 sm:px-2.5 mt-2 rounded-xl hover:bg-black text-[8px]">
             CREATE
+          </button> */}
+
+          <button className="bg-gray-300 text-sm py-1 px-3 mt-2 rounded-md hover:bg-black hover:text-white">
+            Create
           </button>
         </div>
-        <div className="bg-blue-400 py-2 mt-3 md:mt-6  sm:h-[100px] p-2 mx-1.5 rounded">
+
+        <div className="bg-blue-400 py-3 md:py-5 mt-3 md:mt-6 p-2 mx-1.5 rounded">
           <p>Find some podcasts to follow</p>
-          <button className="bg-gray-300 text-[8px] py-2 px-2.5 mt-2 rounded-xl hover:bg-black">
+          <button className="bg-gray-300 text-sm py-1 px-3 mt-2 rounded-md hover:bg-black hover:text-white">
             Search Podcasts
           </button>
         </div>
