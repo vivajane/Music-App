@@ -6,22 +6,25 @@ import { GrLinkNext } from "react-icons/gr";
 import { IoMdAdd } from "react-icons/io";
 import { FaRegPauseCircle } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-<FaRegPauseCircle />
+<FaRegPauseCircle />;
 
 const SideBarleft = () => {
   return (
-    <div className=" w-1/4 h-[753px] text-xs sm:w-1/3 md:w-1/2 md:text-base xl:h-full">
-      <div className="mb-1 h-[80px] bg-blue-900 p-2 ">
+    <div
+      className="flex flex-col w -1/4 h- [753px] gap-1
+     text-xs sm:w- 1/3 md:w -1/2 md:text-base xl: h-full"
+    >
+      <section className="h-[10%] mb- h-[80px  bg-blue-900 p-2 ">
         <div>
           <NavLink to={"/"}>
-          <div className="flex items-center gap-3">
-          <span>
-            <AiTwotoneHome />
-          </span>
-          <div className="py-0.5">
-            <h3>Home</h3>
-          </div>
-        </div>
+            <div className="flex items-center gap-3">
+              <span>
+                <AiTwotoneHome />
+              </span>
+              <div className="py-0.5">
+                <h3>Home</h3>
+              </div>
+            </div>
           </NavLink>
         </div>
 
@@ -33,9 +36,9 @@ const SideBarleft = () => {
             <h3 className="py-0.5">Search</h3>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className=" bg-blue-900 h-[84% h-5/6">
+      <section className="h-[90%] bg-blue-900 h-[84% h- 5/6 ">
         <div className="flex items-center justify-between p-2">
           <div className="flex items-center gap-3">
             <div>
@@ -68,7 +71,7 @@ const SideBarleft = () => {
             Search Podcasts
           </button>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

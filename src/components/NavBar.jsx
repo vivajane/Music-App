@@ -4,9 +4,9 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const NavBar = () => {
   return (
-    <div className="flex flex-col justify-center mt-3">
-      <section className="flex justify-between h-full bg-yellow-30 overflow-hiddenn px-5">
-        <div className="flex gap-3">
+    <div className="h-full flex flex-col justify-center gap-3 mt-3">
+      <section className="flex justify-between h-full bg-yellow-300 overflow-hiddenn px-5">
+        <div className="flex gap-3 items-center">
           <span>
             <IoIosArrowBack />
           </span>
@@ -24,7 +24,7 @@ const NavBar = () => {
       </section>
 
       {/* Category selection section */}
-      <section className="flex justify-between sm:justify-start text-black mt-3">
+      <section className="flex justify-between sm:justify-start text-black">
         <button className="px-6 rounded-full bg-white focus:bg-white hover:bg-white/50 outline-none">
           All
         </button>
