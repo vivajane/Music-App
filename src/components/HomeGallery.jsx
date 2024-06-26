@@ -13,9 +13,9 @@ const HomeGallery = () => {
         <GalleryItem />
       </section>
 
-      <section className="h-[10%]">
+      {/* <section className="h-[10%]">
         <Music />
-      </section>
+      </section> */}
     </div>
   );
 };

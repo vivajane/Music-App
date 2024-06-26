@@ -25,7 +25,7 @@ export const Albums = [
   },
 
   {
-    id: 5,
+    id: 4,
     name: "Best 2024 hits",
     image:
       "https://images.pexels.com/photos/5794559/pexels-photo-5794559.jpeg?auto=compress&cs=tinysrgb&w=400",

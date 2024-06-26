@@ -13,10 +13,11 @@ import { FaVolumeHigh } from "react-icons/fa6";
 import { MdOutlineZoomIn } from "react-icons/md";
 import { CgMiniPlayer } from "react-icons/cg";
 import { FaVolumeMute } from "react-icons/fa";
+import { Albums } from "../assets/asset";
 
 const Music = () => {
   return (
-    <div className="h-full bottom-0 w-full bg-gray-900 flex items-center justify-between px-5">
+    <div className="h-10% w-full bg-gray-900 flex items-center justify-between px-5 text-gray-50">
       {/* left section */}
       <div className="flex items-center gap-4">
         <img
@@ -25,9 +26,10 @@ const Music = () => {
           className=" h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
         />
 
-        <div className="text-xs md:text-sm">
-          <p className="text-gray-400 text-center">Track 1</p>
-          <p>God is love</p>
+        <div className="text-[8px] md:text-sm">
+          <p className=" text-center">{Albums[0].name}</p>
+          <p className="">{Albums[0].desc.slice(0, 10)}</p>
+       
         </div>
       </div>
 
