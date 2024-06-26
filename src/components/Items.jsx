@@ -27,7 +27,7 @@ const Items = ({ name, desc, image, id }) => {
         />
       </NavLink>
 
-      <div className="flex flex-col gap-1 text-center">
+      <div className="flex flex-col gap-1 text-center w-full">
         <h3
           onClick={onClick}
           className="font-bold bg-blue-900 rounded-md p-2 cursor-pointer"
