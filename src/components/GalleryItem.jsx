@@ -29,7 +29,8 @@ const GalleryItem = () => {
         <div className="pt-4 text-center font-extrabold text-[25px] text-black">
           <h2>MOST POPULAR IN YOUR AREA</h2>
         </div>
-        <div className="flex flex-wrap justify-center gap-5 p- overflow-auto">
+
+        <ul className="flex flex-wrap justify-center gap-5 p- overflow-auto">
           {Albums &&
             Albums.map((item, id) => (
               <Items
@@ -40,14 +41,15 @@ const GalleryItem = () => {
                 image={item.image}
               />
             ))}
-        </div>
+        </ul>
       </section>
 
       <section className=" bg-green-600">
         <div className="pt-4 text-center font-extrabold text-[25px] text-black">
           <h2>LATEST IN YOUR AREA</h2>
         </div>
-        <div className="flex flex-wrap justify-center gap-5 overflow-auto">
+
+        <ul className="flex flex-wrap justify-center gap-5 overflow-auto">
           {PopularItems &&
             PopularItems.map((item, id) => (
               <Items
@@ -58,7 +60,7 @@ const GalleryItem = () => {
                 image={item.image}
               />
             ))}
-        </div>
+        </ul>
       </section>
     </div>
   );

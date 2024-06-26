@@ -28,12 +28,12 @@ const Items = ({ name, desc, image, id }) => {
       </NavLink>
 
       <div className="flex flex-col gap-1 text-center w-full">
-        <h3
+        <button
           onClick={onClick}
           className="font-bold bg-blue-900 rounded-md p-2 cursor-pointer"
         >
           About this Playlist
-        </h3>
+        </button>
         {show ? (
           <p className="text-gray-300 group-hover:text-gray-100">{desc}</p>
         ) : null}
